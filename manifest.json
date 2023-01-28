@@ -1,0 +1,25 @@
+{
+  "name": "formzu-extension",
+  "description": "Copy link in Markdown format.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "matches": ["https://ws.formzu.net/sfgen/*"]
+
+  },
+  "content_scripts": [
+    {
+      "js": ["src/content_script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+M"
+      }
+    }
+  },
+  "permissions": ["activeTab", "clipboardWrite"]
+}
