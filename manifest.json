@@ -1,7 +1,7 @@
 {
   "name": "formzu-extension",
-  "description": "Copy link in Markdown format.",
-  "version": "0.0.1",
+  "description": "formzuの商品名、値段だけを抽出するChrome Extension ",
+  "version": "1.0.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
